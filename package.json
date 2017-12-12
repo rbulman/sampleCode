@@ -1,0 +1,24 @@
+{
+  "name": "sample-code",
+  "version": "1.0.0",
+  "description": "To run, type node index.js and view in browser at localhost:3000.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbulman/sampleCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbulman/sampleCode/issues"
+  },
+  "homepage": "https://github.com/rbulman/sampleCode#readme"
+}
