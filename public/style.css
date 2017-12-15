@@ -1,11 +1,14 @@
+.ul { 
+    text-align: center; 
+    display: inline-block;
+}
 .title {
     font-size: 16px;
-    font-color: #3cb371;
-    text-align: center;
+    color: #3cb371;
   }
 
 .body {
     font-size: 12px;
-    font-color: #4A4A4A;
-    text-align: center;
+    color: #4A4A4A;
 }
+

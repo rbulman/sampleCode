@@ -24,7 +24,10 @@ const allAboutMe = {
 router.get('/posts', (req, res) => {
     request('https://jsonplaceholder.typicode.com/posts', function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            response.render('index.ejs');
+            const posts = JSON.parse(response.body);
+            res.render('index.ejs', {
+                posts
+            });
         };
       })
 });
@@ -36,7 +39,7 @@ router.get('/aboutme/:q?', (req, res) => {
     } else if(Object.keys(allAboutMe).indexOf(q) !== -1) {
         res.send(allAboutMe[q]);
     } else {
-        res.send('Parameter not found');
+        res.send('Parameter not found... Please try one of the following: ' + Object.keys(allAboutMe).join(', ') + '.');
     }
 });
 
